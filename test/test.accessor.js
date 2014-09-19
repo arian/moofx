@@ -77,4 +77,8 @@ describe('computes', function (){
         document.body.removeChild(div)
     })
 
+    it('should get prefixed/aliased properties', function(){
+        expect(test.compute('transform')).to.be('matrix(1, 0, 0, 1, 10, 0)')
+    })
+
 })
